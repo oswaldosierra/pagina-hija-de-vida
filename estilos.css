@@ -52,8 +52,15 @@
     display: flex;
     justify-content: center;
 }
+.menuvisible{
+    display: inline!important;
+    opacity: 100%!important;
+    transition: 2s;
+}
 .menu-fijo{
+    transition: 2s;
     display: none;
+    opacity: 0;
     position: fixed;
     z-index: 1000;
     top: 0;
