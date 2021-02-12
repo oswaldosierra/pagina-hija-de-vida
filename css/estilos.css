@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: helvetica;
+}
+.portada{
+    
+    background-size: 100% 100%;
+    min-width: 100vh;
+    min-height: 100vh;
+    color: white;
+    position: relative;
+}
+.foto-perfil{
+    display: inline-block;
+}
+.portada-video{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+.portada-video video{
+    width: 101%;
+    height: 123%;
+    z-index: 0;
+}
+.filtro{
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #03055e44;
+
+}
+.foto-portada{
+    height: 200px;
+    width: 170px;
+    border-radius: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 60%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+}
+.texto-portada{
+    text-align: center;
+    margin-top: 17%;
+    margin-bottom: 70px;
+    z-index: 10;
+    position: relative;
+}
+#pregunta{
+    margin-top: 9%;
+    font-size: 30px;
+    z-index: 10;
+}
+.menu > a{
+    color: #caf0f8;
+    text-decoration: none;
+    font-size: 25px;
+    background: #00b4d8;
+    padding: 15px;
+    border-radius: 20px;
+    position: relative;
+    margin: 0px 75px;
+    transition: 0.30s;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+}
+.menu > a:hover{
+    background: #03045e;
+    transform: translatey(-20px) scale(1.2);
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+}
+.menuvisible{
+    display: inline!important;
+}
+.menu-fijo{
+    transition: 2s;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+    width: 100%;
+    height: 50px;
+    background: white;
+}
+.div-foto-menu{
+    display: inline;
+    margin: 0 0 0 40px;
+}
+.foto-menu{
+    height: 50px;
+    width: 40px;
+    border-radius: 100px;
+    position: relative;
+    top: 0;
+    left: 8px;
+}
+.div-foto-menu > span{
+    margin: 15px 0 0 30px;
+    position: absolute;
+}
+.menu-letra{
+    display: inline;
+    margin: 20px 0 0 45%;
+}
+.menu-fijo > .menu-letra > a{
+    bottom: 18px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 9px;
+    margin: 0 8px;
+    position: relative;
+    border-radius: 5px;
+    transition: 0.30s;
+}
+.menu-letra > a:hover{
+    background: #90e0ef;
+    color: #03045e;
+}
+.a1{
+    background-color: #fff;
+    height: 100vh;
+    text-align: center;
+}
+.perfil-profecional{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: initial;
+    background-image: url("../img/wave.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 325px;
+}
+.inf-perfil-profecional{
+    margin-top: 141px;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.inf-perfil-profecional>span{
+    margin-top: 30px;
+    width: 75%;
+    position: relative;
+    font-size: 20px;
+    text-align: justify;
+}
+.inf-perfil-profecional>h1{
+    font-size: 30px;
+}
+.inf-perfil-profecional>img{
+    position: relative;
+    height: 324px;
+    width: 350px;
+    left: 100px;
+    bottom: 37px;
+}
+.incono-perfil-personal{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.incono-perfil-personal>img{
+    position: relative;
+    width: 400px;
+    bottom: 44px;
+}
+.a2{
+    min-height: 100vh;
+    background-image: url(../img/fondo-estudios.png)
+}
+.cartas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.carta{
+    height: 500px;
+    width: 280px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    background: #54797a;
+}
+.img-carta{
+    background-size: cover;
+    height: 45%;
+    width: 88%;
+    margin: 9px 0;
+}
+.img-sena{
+    background-image: url(../img/sena.png);
+}
+.img-curso{
+    background-image: url(../img/sena.png);
+}
+.img-colegio{
+    background-image: url(../img/sena.png);
+}
+.a2 > h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.inf-sena > h2{
+    text-align: center;
+    margin: 5px
+}
+.a3{
+    min-height: 100vh;
+    text-align: center;
+}
+.opciones{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 800px;
+}
+.trabajos{
+    background-color: #007bff;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.30s;
+}
+.trabajos:hover{
+    background: rgba(35, 245, 175, 0.575);
+    transform: translatey(-20px) scale(1.2);
+}

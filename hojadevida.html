@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Oswaldo Luis Sierra Bran</title>
-    <link rel="stylesheet" href="estilos.css">
-    <script src="codigo.js"></script>
-    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/codigo.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
         var altura = $(".menu").offset().top;
@@ -39,6 +39,12 @@
         </div>
     </div>
     <header class="portada" id="portada"><!-- portada  -->
+        <div class="portada-video"> 
+            <video src="img/video-de-fondo-3.mp4" onloadedmetadata="this.muted=true" autoplay loop >
+
+            </video>
+        </div>
+        <div class="filtro"></div>
         <div class="foto-perfil">
             <img class="foto-portada" src="img/foto-portada.jpg" alt="Foto De Perfil">
         </div>
@@ -52,66 +58,63 @@
             <a href="#a2">Estudios</a>
             <a href="#a3">Experiencia Laboral</a>
             <a href="#a4">Contactame</a>
-        </div>  
+        </div> 
     </header>
     <div id="a1" class="a1"><!-- sepcion-descripcion personal  -->
-        <div class="if">
-            <div class="q-s"><!-- perfil-profecional  -->
-                    <h1>¿Quien Soy?</h1>
-                    <span>Mi nombre es Oswaldo Luis Sierra Bran, Soy un apasionado por las tecnologías Web, Las cuales he venido estudiando estos últimos años, Y en las que pretendo laborar de manera profesional. Puntualmente estoy aprendiendo las tecnologías de fronten en las cuales tengo conocimiento de CSS, HTML,  JavaScritp, y estoy aprendiendo React.js, PHP, Mysql </span>
+        <div class="perfil-profecional">
+            <div class="inf-perfil-profecional"><!-- perfil-profecional  -->
+                <h1>¿Quien Soy?</h1>
+                <span>Hola mi nombre es Oswaldo Luis Sierra Bran, Soy tecnológo de desarrollo de sistema de información del sena de Colombia apasionado por las tecnologías Web, Disfruto diseñando, creando y implementando todo tipo de sitios web, tengo conocimientos en HTML, CSS y JavaScript</span>
+                <img src="img/html.svg" alt="html">
             </div>
-            <div class="ac-me"><!-- metas y Actitudes  -->
-                <div class="a-m">
-                    <h2>Actitudes</h2><!-- Actitudes  -->
-                    <ol>
-                        <li>Auto Suficiente</li>
-                        <li>Perceverante</li>
-                        <li>De Rapido Aprendizaje</li>
-                        <li>Responsable</li>
-                        <li>Resolutivo</li>
-                    </ol>
-                </div>
-                <div class="a-m"><!-- metas  -->
-                    <h2>Metas</h2>
-                    <ol>
-                        <li>Estudiar Ingenieria En Sistemas</li>
-                        <li>Trabajar Como Desarrollador Web</li>
-                        <li>Aprender Nuevas Tecnologias</li>
-                        <li>Crear Una Empresra De Soporte Tecnico</li>                   
-                    </ol>
-                </div>
+            <div class="incono-perfil-personal">
+                <img src="img/Web_Developer_Monochromatic.svg" alt="Web_Developer_Monochromatic">
             </div>
         </div>
     </div>
     <div class="a2" id="a2"> <!-- sepcion-estudios  -->
         <h1>Estudios</h1>
         <div class="cartas"><!-- cartas-de-estudios  -->
-            <div class="carta"> <!-- colegio  -->
+            <div class="carta"> <!-- Básica primaria  -->
                 <div class="img-carta img-sena"></div>
                 <div class="inf-sena">
-                    <h1>Tecnico En Sistemas</h1>
-                    <span>Estudie Tecnico En Sistemas en el SENA duante un año </span>
+                    <h2>Básica Primaria</h2>
+                    <li>Anexo Regina pía de andará</li>
+                    <li>Coro, Venezuela , 2012</li>
                 </div>
             </div>
-            <div class="carta"><!-- sena -->
+            <div class="carta"> <!-- ESTUDIOS SEGUNDARIOS  -->
                 <div class="img-carta img-sena"></div>
                 <div class="inf-sena">
-                    <h1>Tecnico En Sistemas</h1>
-                    <span>Estudie Tecnico En Sistemas en el SENA duante un año </span>
+                    <h2>Bachiller Académico</h2>
+                    <li>Corporación Centro Regional De Capacitación Social COCERCA</li>
+                    <li>Barranquilla, Atlántico, 2018</li>
+                </div>
+            </div>
+            <div class="carta"><!-- tecnico -->
+                <div class="img-carta img-sena"></div>
+                <div class="inf-sena">
+                    <h2>Tecnico En Sistemas</h2>
+                    <li>SENA CENTRO INDUSTRIAL Y DE AVIACION</li>
+                    <li>Barranquilla, Atlántico , 2019</li>
+                </div>
+            </div>
+            <div class="carta"><!-- tecnologo -->
+                <div class="img-carta img-sena"></div>
+                <div class="inf-sena">
+                    <h2>Análisis Y Desarrollo De Sistemas De Informació</h2>
+                    <li>SENA CENTRO DE DISEÑO Y METROLOGIA</li>
+                    <li>Modalidad Virtual – En formación</li>
+                    <li>Barranquilla, Atlántico, 2020</li>
                 </div>
             </div>
             <div class="carta"><!-- curso-sena -->
                 <div class="img-carta img-sena"></div>
                 <div class="inf-sena">
-                    <h1>Tecnico En Sistemas</h1>
-                    <span>Estudie Tecnico En Sistemas en el SENA duante un año </span>
-                </div>
-            </div>
-            <div class="carta"><!-- curso-platzi -->
-                <div class="img-carta img-sena"></div>
-                <div class="inf-sena">
-                    <h1>Tecnico En Sistemas</h1>
-                    <span>Estudie Tecnico En Sistemas en el SENA duante un año </span>
+                    <h2>Cursos Del SENA</h2>
+                    <li>Desarrollo web con php (40 horas)</li>
+                    <li>Diseñar páginas web con HTML y JavaScript (40 horas)</li>
+                    <li>Servicio al cliente mediante la comunicación telefónica (40 horas)</li>
                 </div>
             </div>
         </div>
