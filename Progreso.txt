@@ -2,9 +2,9 @@
 **tiene que haber un color en general 
 **Colocar las redes solciales en forma de icono a un costado 
 **Fala el sepmento portafolio
+**Saber en que sepmento de la pagina estamos 
 
 ------Portada-----
-**Tiene que aver una animacion(se desvanescan se muevan y no sobresalgan mas que la informacion principal(tipo borroso o opaco)) en el fondo en forma de iconos de lenguajes de programacion.
 **agregar desarrollador de citios web
 
 ------ Quien Soy ------
